@@ -390,31 +390,44 @@
                 </svg>
             </button>
 
-            <h1 class="backdrop-title" >Оставьте свои данные, мы вам перезвоним</h1>
 
-            <form class="js-speaker-form">
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name">
+            <form class="form js-speaker-form">
 
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel">
+                <h1 class="backdrop-title">Оставьте свои данные, мы вам перезвоним</h1>
 
-                <label for="mail">Почта</label>
-                <input type="email" name="mail" id="mail">
+                <div class="form-field">
+                <label class="form-label" for="name" >Имя</label>
+                <input class="form-input" type="text" name="name" id="name">
+                </div>
 
-                <label for="text">Комментарий</label>
-                <textarea name="text" id="text" rows="10"></textarea>
+                <div class="form-field">
+                <label class="form-label" for="tel">Телефон</label>
+                <input class="form-input" type="tel" name="tel" id="tel">
+                </div>
 
+                <div class="form-field">
+                <label class="form-label" for="mail">Почта</label>
+                <input class="form-input" type="email" name="mail" id="mail">
+                </div>
+
+                <div class="form-field">
+                <label class="form-label" for="text" >Комментарий</label>
+                <textarea class="comment" name="text" id="text" placeholder="Введите текст"></textarea>
+                </div>
+
+                <div class="form-agreement">
                 <input type="checkbox" name="agreement" value="agreement" id="agreement">
                 <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                </div>
 
+                <div class="form-bitton">
                 <button type="submit">Отправить</button>
+                </div>
             </form>
-
 
         </div>
     </div>
-
+rows="7"
     <script>
         (() => {
             document
