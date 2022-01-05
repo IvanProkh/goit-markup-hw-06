@@ -814,3 +814,15 @@ header {
 
   fill: #000000;
 }
+
+.backdrop-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+textarea {
+  resize: none;
+}
