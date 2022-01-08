@@ -224,18 +224,19 @@ header {
 .button.primary {
   display: inline-block;
   padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: transparent;
-  border: 0;
 
-  cursor: pointer;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
   color: var(--second-color);
   background: var(--theme-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 /* =========== Section-list =========== */
@@ -813,6 +814,9 @@ header {
 }
 
 .backdrop-title {
+  margin-top: 0;
+  margin-bottom: 2px;
+
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
@@ -822,11 +826,6 @@ header {
 
 textarea {
   resize: none;
-}
-
-.backdrop-title {
-  margin-top: 0;
-  margin-bottom: 2px;
 }
 
 .form {
@@ -840,7 +839,7 @@ textarea {
 
 .form-field input {
   margin: 0;
-  padding: 12px 0px 12px 42px;
+  padding: 11px 0px 11px 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -879,6 +878,8 @@ textarea::placeholder {
 
 .form-agreement {
   margin-bottom: 30px;
+  display: flex;
+  text-align: start;
 }
 
 .form-agreement label {
@@ -889,21 +890,37 @@ textarea::placeholder {
   color: #757575;
 }
 
-.form-bitton button {
-  display: inline-block;
+.form-agreement input[type='checkbox'] {
+  width: 16px;
+  height: 15px;
+  margin: 5px 8px 5px 12px;
+}
+
+.text-element-checkbox {
+  text-decoration: underline;
+
+  color: var(--theme-color);
+}
+
+.form-button {
+  display: flex;
+}
+
+.form-button button {
   padding: 10px 30px;
   margin-right: auto;
   margin-left: auto;
 
   width: 200px;
-
-  cursor: pointer;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
   color: var(--second-color);
   background: var(--theme-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
+  border: 0;
 }

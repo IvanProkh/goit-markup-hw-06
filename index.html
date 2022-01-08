@@ -393,41 +393,46 @@
 
             <form class="form js-speaker-form">
 
-                <h1 class="backdrop-title">Оставьте свои данные, мы вам перезвоним</h1>
+                <p class="backdrop-title">Оставьте свои данные, мы вам перезвоним</p>
 
                 <div class="form-field">
-                <label class="form-label" for="name" >Имя</label>
-                <input class="form-input" type="text" name="name" id="name">
+                    <label class="form-label" for="name" >Имя</label>
+                    <span>
+                    <!-- <svg class="" width="11" height="11">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg> -->
+                    </span>
+                    <input class="form-input" type="text" name="name" id="name">
                 </div>
 
                 <div class="form-field">
-                <label class="form-label" for="tel">Телефон</label>
-                <input class="form-input" type="tel" name="tel" id="tel">
+                    <label class="form-label" for="tel">Телефон</label>
+                    <input class="form-input" type="tel" name="tel" id="tel">
                 </div>
 
                 <div class="form-field">
-                <label class="form-label" for="mail">Почта</label>
-                <input class="form-input" type="email" name="mail" id="mail">
+                    <label class="form-label" for="mail">Почта</label>
+                    <input class="form-input" type="email" name="mail" id="mail">
                 </div>
 
                 <div class="form-field">
-                <label class="form-label" for="text" >Комментарий</label>
-                <textarea class="comment" name="text" id="text" placeholder="Введите текст"></textarea>
+                    <label class="form-label" for="text" >Комментарий</label>
+                    <textarea class="comment" name="text" id="text" placeholder="Введите текст"></textarea>
                 </div>
 
                 <div class="form-agreement">
-                <input type="checkbox" name="agreement" value="agreement" id="agreement">
-                <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    <input type="checkbox" name="agreement" value="agreement" id="agreement">
+                    <label for="agreement">Соглашаюсь с рассылкой и принимаю <span class="text-element-checkbox">Условия договора</span></label>
                 </div>
 
-                <div class="form-bitton">
-                <button type="submit">Отправить</button>
+                <div class="form-button">
+                    <button type="submit">Отправить</button>
                 </div>
             </form>
 
         </div>
     </div>
-rows="7"
+    
     <script>
         (() => {
             document
