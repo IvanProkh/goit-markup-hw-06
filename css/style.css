@@ -512,6 +512,7 @@ header {
 /* =========== FOOTER =========== */
 
 .footer-section {
+  display: flex;
   padding: 60px 0px;
   background: var(--background-first);
 }
@@ -615,6 +616,45 @@ header {
 .footer-icon:hover,
 .footer-icon:focus {
   background-color: var(--theme-color);
+}
+
+/* =========== Subscribe section =========== */
+
+.subscribe-div {
+  /* display: inline-block; */
+}
+
+.title-subscribe {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-color);
+}
+
+.subscribe-input {
+}
+
+.subscribe-button button {
+  padding: 10px 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 200px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--second-color);
+  background: var(--theme-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: 0;
 }
 
 /* =========== Footer styles ends here =========== */
