@@ -580,6 +580,10 @@ header {
 
 /* =========== join section =========== */
 
+.join-div {
+  margin-right: 92px;
+}
+
 .title-join {
   margin-top: 12px;
   margin-bottom: 20px;
@@ -621,12 +625,12 @@ header {
 /* =========== Subscribe section =========== */
 
 .subscribe-div {
-  /* display: inline-block; */
 }
 
 .title-subscribe {
   margin-top: 12px;
   margin-bottom: 20px;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -635,13 +639,29 @@ header {
   color: var(--second-color);
 }
 
-.subscribe-input {
+.subscribe-mail input {
+  margin-right: 10px;
+  padding: 15px 0px 15px 16px;
+
+  width: 358px;
+
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 
-.subscribe-button button {
+subscribe-mail::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.subscribe-mail button {
   padding: 10px 30px;
-  margin-right: auto;
-  margin-left: auto;
 
   width: 200px;
   font-weight: bold;
