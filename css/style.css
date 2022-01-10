@@ -903,15 +903,13 @@ header {
   letter-spacing: 0.03em;
 }
 
-textarea {
-  resize: none;
-}
-
 .form {
   padding: 40px;
 }
 
 .form-field {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 }
@@ -933,6 +931,32 @@ textarea {
   letter-spacing: 0.01em;
 
   color: #757575;
+}
+
+/* ИСПРАВИТЬ */
+
+.icon-form {
+  position: absolute;
+  top: 62%;
+  left: 3.5%;
+}
+
+.form-input:focus + .icon-form {
+  fill: var(--theme-color);
+}
+
+span.icon-form:focus-within {
+  border: 5px solid red;
+}
+
+/* input.form-input {
+  border-color: red;
+} */
+
+/* ПО СЮДА */
+
+textarea {
+  resize: none;
 }
 
 .form-field textarea {
@@ -975,7 +999,7 @@ textarea::placeholder {
   margin: 5px 8px 5px 12px;
 }
 
-.text-element-checkbox {
+.text-link-checkbox {
   text-decoration: underline;
 
   color: var(--theme-color);
