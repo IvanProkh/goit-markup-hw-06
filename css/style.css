@@ -547,6 +547,10 @@ header {
 }
 
 .footer-contact.address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
   color: var(--second-color);
 }
 
@@ -581,7 +585,7 @@ header {
 /* =========== join section =========== */
 
 .join-div {
-  margin-right: 92px;
+  margin-right: 93px;
 }
 
 .title-join {
@@ -624,10 +628,12 @@ header {
 
 /* =========== Subscribe section =========== */
 
-.subscribe-div {
+.subscribe-box {
+  margin-left: auto;
 }
 
-.title-subscribe {
+.subscribe-title {
+  display: block;
   margin-top: 12px;
   margin-bottom: 20px;
 
@@ -639,31 +645,38 @@ header {
   color: var(--second-color);
 }
 
-.subscribe-mail input {
-  margin-right: 10px;
-  padding: 15px 0px 15px 16px;
+.subscribe-mail {
+  display: flex;
+}
 
-  width: 358px;
+.subscribe-mail input {
+  margin-right: 12px;
+  padding: 14px 0px 14px 15px;
+  min-width: 358px;
+  max-height: 50px;
 
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: var(--second-color);
 }
 
-subscribe-mail::placeholder {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
+.subscribe-mail::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 
-  color: rgba(117, 117, 117, 0.5);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-mail button {
+  display: flex;
   padding: 10px 30px;
+  min-width: 200px;
+  max-height: 50px;
 
-  width: 200px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -675,6 +688,12 @@ subscribe-mail::placeholder {
   border-radius: 4px;
   cursor: pointer;
   border: 0;
+}
+
+.icon-send {
+  margin-left: 10px;
+
+  fill: var(--second-color);
 }
 
 /* =========== Footer styles ends here =========== */
