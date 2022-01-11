@@ -655,12 +655,20 @@ header {
   min-width: 358px;
   max-height: 50px;
 
+  cursor: pointer;
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--second-color);
+
+  transition: border-color var(--transition);
+}
+
+.subscribe-mail input:focus {
+  border: 1px solid var(--theme-color);
+  outline: none;
 }
 
 .subscribe-mail::placeholder {
@@ -682,16 +690,17 @@ header {
   line-height: 1.87;
   letter-spacing: 0.06em;
 
+  cursor: pointer;
   color: var(--second-color);
   background: var(--theme-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
   border: 0;
 }
 
 .icon-send {
   margin-left: 10px;
+  margin-top: 3px;
 
   fill: var(--second-color);
 }
@@ -918,8 +927,12 @@ header {
   margin: 0;
   padding: 11px 0px 11px 42px;
 
+  cursor: pointer;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border var(--transition);
 }
 
 .form-field label {
@@ -933,42 +946,42 @@ header {
   color: #757575;
 }
 
-/* ИСПРАВИТЬ */
-
 .icon-form {
   position: absolute;
   top: 62%;
   left: 3.5%;
+
+  transition: fill var(--transition);
 }
 
 .form-input:focus + .icon-form {
   fill: var(--theme-color);
 }
 
-span.icon-form:focus-within {
-  border: 5px solid red;
+.form-field input:focus {
+  border: 1px solid var(--theme-color);
+  outline: none;
 }
-
-/* input.form-input {
-  border-color: red;
-} */
-
-/* ПО СЮДА */
 
 textarea {
   resize: none;
+  cursor: pointer;
 }
 
 .form-field textarea {
   margin-bottom: 20px;
   padding: 12px 16px;
 
+  height: 120px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border var(--transition);
 }
 
-.form-field textarea {
-  height: 120px;
+.form-field textarea:focus {
+  border: 1px solid var(--theme-color);
+  outline: none;
 }
 
 textarea::placeholder {
@@ -980,6 +993,7 @@ textarea::placeholder {
 }
 
 .form-agreement {
+  position: relative;
   margin-bottom: 30px;
   display: flex;
   text-align: start;
@@ -997,12 +1011,25 @@ textarea::placeholder {
   width: 16px;
   height: 15px;
   margin: 5px 8px 5px 12px;
+
+  cursor: pointer;
 }
 
-.text-link-checkbox {
+.link-checkbox {
   text-decoration: underline;
 
   color: var(--theme-color);
+}
+
+.checkbox-icon {
+  position: absolute;
+  top: 5px;
+  left: 12px;
+}
+
+.checkbox-icon:focus {
+  fill: var(--theme-color);
+  border-radius: 2px;
 }
 
 .form-button {
