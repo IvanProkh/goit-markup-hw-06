@@ -1025,10 +1025,21 @@ textarea::placeholder {
   position: absolute;
   top: 5px;
   left: 12px;
+
+  background-size: contain;
 }
 
-.checkbox-icon:focus {
+.wrapper-icon {
+  background-origin: border-box;
+}
+
+.form-agreement input:checked + .checkbox-icon {
+  background-color: var(--theme-color);
+  background-size: contain;
+  border-color: rgba(0, 0, 0, 0);
+
   fill: var(--theme-color);
+  color: #2196f3;
   border-radius: 2px;
 }
 
