@@ -899,6 +899,13 @@ header {
   right: 9px;
 
   fill: #000000;
+
+  transition: fill var(--transition), fill var(--transition);
+}
+
+.modal-close:focus .close,
+.modal-close:hover .close {
+  fill: var(--theme-color);
 }
 
 .backdrop-title {
@@ -992,6 +999,47 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
+/* рабочая копия */
+
+/* .form-agreement {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  text-align: start;
+}
+
+.form-agreement label {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.form-agreement input[type='checkbox'] {
+  width: 16px;
+  height: 15px;
+  margin: 5px 8px 5px 12px;
+
+  cursor: pointer;
+}
+
+.link-checkbox {
+  text-decoration: underline;
+
+  color: var(--theme-color);
+}
+
+/* ИСПРАВИТЬ 
+
+.checkbox-icon {
+  position: absolute;
+  top: 5px;
+  left: 12px;
+
+  fill: #000000;
+} */
+
 .form-agreement {
   position: relative;
   margin-bottom: 30px;
@@ -1021,27 +1069,49 @@ textarea::placeholder {
   color: var(--theme-color);
 }
 
-.checkbox-icon {
-  position: absolute;
-  top: 5px;
-  left: 12px;
+/* ИСПРАВИТЬ */
 
-  background-size: contain;
+.checkbox-icon {
+  fill: #000000;
 }
 
 .wrapper-icon {
   background-origin: border-box;
 }
 
-.form-agreement input:checked + .checkbox-icon {
+.form-agreement input[type='checkbox']:checked + .checkbox .checkbox-icon {
+  fill: #2196f3;
+
+  background-color: transparent;
+}
+
+.form-agreement input[type='checkbox']:checked .wrapper-icon {
+  background-color: transparent;
+}
+
+.form-agreement input:checked ~ .checkbox-icon {
   background-color: var(--theme-color);
   background-size: contain;
   border-color: rgba(0, 0, 0, 0);
 
   fill: var(--theme-color);
-  color: #2196f3;
-  border-radius: 2px;
+  /* color: #2196f3; */
 }
+
+.checkbox-input:checked .checkbox-icon {
+  fill: #2196f3;
+
+  background-color: transparent;
+}
+
+.checkbox-input:focus ~ .checkbox-icon,
+.checkbox-input:hover ~ .checkbox-icon {
+  fill: #2196f3;
+
+  background-color: transparent;
+}
+
+/* ПО СЮДА */
 
 .form-button {
   display: flex;
