@@ -1058,7 +1058,7 @@ textarea::placeholder {
 .form-agreement input[type='checkbox'] {
   width: 16px;
   height: 15px;
-  margin: 5px 8px 5px 12px;
+  margin: 5px 8px 0px 12px;
 
   cursor: pointer;
 }
@@ -1069,49 +1069,23 @@ textarea::placeholder {
   color: var(--theme-color);
 }
 
-/* ИСПРАВИТЬ */
+.form-agreement label {
+  display: flex;
+}
 
 .checkbox-icon {
+  position: absolute;
+  top: 5px;
+  left: 12px;
+
   fill: #000000;
 }
 
-.wrapper-icon {
-  background-origin: border-box;
+input[type='checkbox']:checked ~ .wrapper-icon {
+  color: blue;
+  fill: red;
+  opacity: 0;
 }
-
-.form-agreement input[type='checkbox']:checked + .checkbox .checkbox-icon {
-  fill: #2196f3;
-
-  background-color: transparent;
-}
-
-.form-agreement input[type='checkbox']:checked .wrapper-icon {
-  background-color: transparent;
-}
-
-.form-agreement input:checked ~ .checkbox-icon {
-  background-color: var(--theme-color);
-  background-size: contain;
-  border-color: rgba(0, 0, 0, 0);
-
-  fill: var(--theme-color);
-  /* color: #2196f3; */
-}
-
-.checkbox-input:checked .checkbox-icon {
-  fill: #2196f3;
-
-  background-color: transparent;
-}
-
-.checkbox-input:focus ~ .checkbox-icon,
-.checkbox-input:hover ~ .checkbox-icon {
-  fill: #2196f3;
-
-  background-color: transparent;
-}
-
-/* ПО СЮДА */
 
 .form-button {
   display: flex;
