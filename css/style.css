@@ -1037,6 +1037,7 @@ textarea::placeholder {
   top: 5px;
   left: 12px;
 
+  cursor: pointer;
   fill: #000000;
 }
 
@@ -1057,6 +1058,7 @@ textarea::placeholder {
   top: 5px;
   left: 12px;
 
+  cursor: pointer;
   fill: #ffffff;
   background-color: var(--theme-color);
   border-radius: 2px;
