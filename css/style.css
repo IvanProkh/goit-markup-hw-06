@@ -1050,6 +1050,7 @@ textarea::placeholder {
 }
 
 .wrapper-icon-check {
+  cursor: pointer;
   opacity: 0;
 }
 
