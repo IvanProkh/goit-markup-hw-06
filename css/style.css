@@ -1014,13 +1014,24 @@ textarea::placeholder {
   color: #757575;
 }
 
-.form-agreement input[type='checkbox'] {
+.checkbox-agreement {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* .form-agreement input[type='checkbox'] {
   width: 16px;
   height: 15px;
   margin: 5px 8px 0px 12px;
 
   cursor: pointer;
-}
+} */
 
 .link-checkbox {
   text-decoration: underline;
@@ -1030,12 +1041,15 @@ textarea::placeholder {
 
 .form-agreement label {
   display: flex;
+  align-items: center;
 }
 
 .checkbox-icon {
-  position: absolute;
-  top: 5px;
-  left: 12px;
+  /* position: absolute; */
+  /* top: 5px;
+  left: 12px; */
+
+  margin: 5px 8px 0px 12px;
 
   cursor: pointer;
   fill: #000000;
